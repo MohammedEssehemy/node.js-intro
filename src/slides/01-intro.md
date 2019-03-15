@@ -18,11 +18,22 @@ But, before you can even be bad,
 
 ---
 
-**Asynchronous event driven** JavaScript **runtime**, designed to build **scalable** network applications
+# Open source
+
+**Asynchronous, event driven** JavaScript **runtime**
+
+designed to build **scalable** network applications
 
 ---
 
-# what? 🥺🥺😢
+# what?
+
+# 🥺🥺😢
+
+---
+
+![Open Source](./OSS.png)
+
 ---
 
 ![](./runtime.png)
@@ -41,7 +52,9 @@ But, before you can even be bad,
 
 ---
 
-# easy, let's go on 💪💪💪
+# easy, let's go on
+
+# 💪💪💪
 
 ---
 
@@ -53,7 +66,9 @@ But, before you can even be bad,
 
 ---
 
-# I knew it, but why should I use it??? 🤔🤔🤔
+# But, why should I use it???
+
+# 🤔🤔🤔
 
 ---
 
@@ -61,8 +76,33 @@ But, before you can even be bad,
 
 ---
 
-# But will I be alone??
+# But, will I be alone??
+
+# 🤨🤨🤨
 
 ---
 
-![](./companies.png)
+![🥳🥳🥳](./companies.png)
+
+---
+
+# let's build a simple CLI.
+
+# 🏋️‍♀️
+
+---
+
+# let's build simple server.
+
+# 🧐🏋️‍♀️🧐
+
+---
+
+# simple, easy, great community.
+
+# welcome to the community.
+
+👋🤗👋🤗
+
+---
+![NPM](./npm.png)
