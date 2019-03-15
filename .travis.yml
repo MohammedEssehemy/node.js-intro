@@ -1,0 +1,23 @@
+#sudo: required
+#services:
+#  - docker
+dist: xenial
+language: node_js
+node_js:
+  - lts/*
+cache: npm
+install:
+  - npm install
+script:
+  - npm test
+  - npm run build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  verbose: true
+  github-token:
+    secure: El5YAqeJhh9Q9dEscR95gi7VRWvoqTrrwazyn7L0jqeWM/Rf3wRF8+zbUczZcH+s+6aT0AfTbDPzWf8JKb5kkzqiW+XbCda8tyPorZV8uh/zkf0XahVJc5KPmcbb/9OgCz4RvhOjr5uOLmRHI4JqGyolfwOSY23xsaviYwdgCCxCXcicYygpKDcBSIDgJiPRTMePqsy89KOYTXnkM29VeZSz0ewc/9vT3Vl8aUnkHexwqC9h8IoJCbKyMNUNyUqTsYLR9u+9ssqALpo7Vj9x0qnYDbZOjih7I/R/HZ1kd7k7Tn76U66Vz4aV5vOaBByokQaPTErrsXS+NM6FmXh1cM9uLIfhtleW2tRM1b4+/cAqFXQpjptcDN8UsUwuoSl4HKg0rnZ1CgfSlPP6Xa9t0zdhridu/SdJHe4Bn6srxxSYS7t4IQZl8OdY0o3fi2CEILN+txkvCOPHaXK8vaAT0wrVKV34G9OaomQ2Vuz7G7fWlxOXekqAZJlZF76ycLwldOIyZCLkGfyczPsVfHCcVo0j/LEyQuBQMTyu14dvbLKmPj23KHvOe59lM3U+7UkrUyZhEc8zlmMj8AVwbKL4No4Y+fpQ0RZJYkIaAuNrVqTCuJm/RlRO6AuKwUXM8s+uWJAVQqZVIRagQlEsewBA9gtxtT/ScVQbrkrjloZs3I8=
+  keep-history: true
+  local-dir: public
+  on:
+    branch: master
