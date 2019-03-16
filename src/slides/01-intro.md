@@ -1,6 +1,9 @@
 # Node.js Intro
 *Mohammed Essehemy*
 
+[![LinkedIn](./LinkedIn.png)](https//linkedin.com/in/mohammed-essehemy)
+[![Github](./Github.png)](https//github.com/mohammedessehemy)
+[![Gmail](./Gmail.png)](mailto:mohammedessehemy@gmail.com)
 ---
 Remember,
 
@@ -92,9 +95,11 @@ designed to build **scalable** network applications
 
 ---
 
-# let's build simple server.
+# Core modules
 
-# 🧐🏋️‍♀️🧐
+---
+
+![NPM](./npm.png)
 
 ---
 
@@ -103,6 +108,3 @@ designed to build **scalable** network applications
 # welcome to the community.
 
 👋🤗👋🤗
-
----
-![NPM](./npm.png)
