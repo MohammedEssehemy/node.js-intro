@@ -1,8 +1,8 @@
 # Node.js Intro
 *Mohammed Essehemy*
 
-[![LinkedIn](./LinkedIn.png)](https//linkedin.com/in/mohammed-essehemy)
-[![Github](./Github.png)](https//github.com/mohammedessehemy)
+[![LinkedIn](./LinkedIn.png)](//linkedin.com/in/mohammed-essehemy)
+[![Github](./Github.png)](//github.com/mohammedessehemy)
 [![Gmail](./Gmail.png)](mailto:mohammedessehemy@gmail.com)
 ---
 Remember,
