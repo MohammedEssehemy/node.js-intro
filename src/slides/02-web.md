@@ -16,6 +16,10 @@ More Terms?
 
 ---
 
+![](./dns.jpg)
+
+---
+
 DNS
 
 Server
