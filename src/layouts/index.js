@@ -5,7 +5,9 @@ import Helmet from 'react-helmet';
 import GithubCorner from 'react-github-corner';
 import Swipeable from 'react-swipeable';
 import Transition from '../components/transition';
-
+import GithubIcon from './../slides/Github.png';
+import LinkedInIcon from './../slides/LinkedIn.png';
+import GmailIcon from './../slides/Gmail.png';
 import './index.css';
 
 const Header = ({ name, title, date }) => (
@@ -17,13 +19,13 @@ const Header = ({ name, title, date }) => (
       <GithubCorner href="https://github.com/MohammedEssehemy/node.js-intro" />
       <div className="contacts">
         <a href="https://github.com/mohammedessehemy">
-          <img src="./Github.png" alt="github profile" />
+          <img src={GithubIcon} alt="github profile" />
         </a>
         <a href="https://linkedin.com/in/mohammed-essehemy">
-          <img src="./LinkedIn.png" alt="linkedin profile" />
+          <img src={LinkedInIcon} alt="linkedin profile" />
         </a>
         <a href="mailto:mohammedessehemy@gmail.com">
-          <img src="./Gmail.png" alt="send mail" />
+          <img src={GmailIcon} alt="send mail" />
         </a>
       </div>
     </div>
