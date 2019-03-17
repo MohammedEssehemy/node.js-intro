@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link, navigate, StaticQuery, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
+import GithubCorner from 'react-github-corner';
 import Swipeable from 'react-swipeable';
 import Transition from '../components/transition';
 
@@ -10,9 +11,22 @@ import './index.css';
 const Header = ({ name, title, date }) => (
   <header>
     <Link to="/1">
-      <span>{name}</span> — {title}
+      <span>{title}</span> - {name}
     </Link>
-    <time>{date}</time>
+    <div>
+      <GithubCorner href="https://github.com/MohammedEssehemy/node.js-intro" />
+      <div className="contacts">
+        <a href="https://github.com/mohammedessehemy">
+          <img src="./Github.png" alt="github profile" />
+        </a>
+        <a href="https://linkedin.com/in/mohammed-essehemy">
+          <img src="./LinkedIn.png" alt="linkedin profile" />
+        </a>
+        <a href="mailto:mohammedessehemy@gmail.com">
+          <img src="./Gmail.png" alt="send mail" />
+        </a>
+      </div>
+    </div>
   </header>
 );
 
@@ -71,7 +85,7 @@ class TemplateWrapper extends Component {
           onSwipedRight={this.swipeRight}
         >
           <Transition location={location}>
-            <div id="slide" style={{'width': '100%'}}>{children}</div>
+            <div id="slide" style={{ 'width': '100%' }}>{children}</div>
           </Transition>
         </Swipeable>
       </div>

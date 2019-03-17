@@ -175,3 +175,10 @@ header a:hover {
 header span {
   color: var(--text);
 }
+
+.contacts {
+  margin-right: 2rem;
+}
+.contacts a{
+   margin-right: 0.2rem;
+}
