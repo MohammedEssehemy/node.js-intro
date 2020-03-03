@@ -3,6 +3,10 @@ module.exports = {
     name: `Mohammed Essehemy`,
     title: `Nodejs Intro`,
     date: `March 15, 2019`,
+    repo: `https://github.com/MohammedEssehemy/node.js-intro`,
+    github: `https://github.com/mohammedessehemy`,
+    linkedIn: `https://linkedin.com/in/mohammed-essehemy`,
+    email: `mailto:mohammedessehemy@gmail.com`
   },
   plugins: [
     `gatsby-plugin-layout`,

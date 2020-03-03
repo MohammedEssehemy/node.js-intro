@@ -1,19 +1,21 @@
 
-![](./talk_code.jpg)
+# let's build simple server
 
 ---
 
-# let's build simple server.
-
-# 🧐🏋️‍♀️🧐
+![blocking](./images/blocking.png)
 
 ---
 
-![](./solve_code.jpg)
+![non-blocking](./images/non-blocking.png)
 
 ---
 
-![](doesnot-work.jpg)
+![](./images/solve_code.jpg)
+
+---
+
+![](./images/doesnot-work.jpg)
 
 ---
 
@@ -21,19 +23,15 @@
 
 ---
 
-![](./eventLoop.png)
+![](./images/eventLoop.png)
 
 ---
 
-# 😜🤪😜
+![](./images/async-history.jpg)
 
 ---
 
-![](./eventLoop.png)
-
----
-
-# 🤓😎🤓
+![](./images/async-javascript-callbacks-to-promises-to-async-await.jpg)
 
 ---
 

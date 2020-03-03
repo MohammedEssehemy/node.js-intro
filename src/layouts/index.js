@@ -3,28 +3,28 @@ import PropTypes from 'prop-types';
 import { Link, navigate, StaticQuery, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import GithubCorner from 'react-github-corner';
-import Swipeable from 'react-swipeable';
+import { Swipeable } from 'react-swipeable';
 import Transition from '../components/transition';
-import GithubIcon from './../slides/Github.png';
-import LinkedInIcon from './../slides/LinkedIn.png';
-import GmailIcon from './../slides/Gmail.png';
+import GithubIcon from './../icons/Github.png';
+import LinkedInIcon from './../icons/LinkedIn.png';
+import GmailIcon from './../icons/Gmail.png';
 import './index.css';
 
-const Header = ({ name, title, date }) => (
+const Header = ({ name, title, date, repo, github, linkedIn, email }) => (
   <header>
     <Link to="/1">
       <span>{title}</span> - {name}
     </Link>
     <div>
-      <GithubCorner href="https://github.com/MohammedEssehemy/node.js-intro" />
+      <GithubCorner href={repo} rel="noopener noreferrer" target="_blank"/>
       <div className="contacts">
-        <a href="https://github.com/mohammedessehemy">
+        <a href={github} target="_blank" rel="noopener noreferrer">
           <img src={GithubIcon} alt="github profile" />
         </a>
-        <a href="https://linkedin.com/in/mohammed-essehemy">
+        <a href={linkedIn} target="_blank" rel="noopener noreferrer">
           <img src={LinkedInIcon} alt="linkedin profile" />
         </a>
-        <a href="mailto:mohammedessehemy@gmail.com">
+        <a href={email} target="_blank" rel="noopener noreferrer">
           <img src={GmailIcon} alt="send mail" />
         </a>
       </div>
@@ -71,16 +71,21 @@ class TemplateWrapper extends Component {
 
   render() {
     const { location, children, site } = this.props;
+    const {siteMetadata: { title, name, date, repo, github, linkedIn, email } } = site;
 
     return (
       <div>
         <Helmet
-          title={`${site.siteMetadata.title} — ${site.siteMetadata.name}`}
+          title={`${title} — ${name}`}
         />
         <Header
-          name={site.siteMetadata.name}
-          title={site.siteMetadata.title}
-          date={site.siteMetadata.date}
+          name={name}
+          title={title}
+          date={date}
+          repo={repo}
+          github={github}
+          linkedIn={linkedIn}
+          email={email}
         />
         <Swipeable
           onSwipedLeft={this.swipeLeft}
@@ -108,7 +113,11 @@ export default props => (
           siteMetadata {
             name
             title
-            date
+            date,
+            repo,
+            github,
+            linkedIn,
+            email
           }
         }
         allSlide {

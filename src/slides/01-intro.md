@@ -1,7 +1,6 @@
 # Node.js Intro
 *Mohammed Essehemy*
 
-
 ---
 Remember,
 
@@ -27,43 +26,19 @@ designed to build **scalable** network applications
 
 ---
 
-# what?
-
-# 🥺🥺😢
-
----
-
-![Open Source](./OSS.png)
-
----
-
-![](./runtime.png)
-
----
-
-# 😢🤯
-
----
-
 # let's break it down
 
 ---
 
-![](./runtime.png)
+![Open Source](./images/OSS.png)
 
 ---
 
-# easy, let's go on
-
-# 💪💪💪
+![](./images/runtime.png)
 
 ---
 
-![blocking](./blocking.png)
-
----
-
-![non-blocking](./non-blocking.png)
+# let's go on
 
 ---
 
@@ -73,7 +48,7 @@ designed to build **scalable** network applications
 
 ---
 
-![](./why.png)
+![](./images/why.png)
 
 ---
 
@@ -83,7 +58,7 @@ designed to build **scalable** network applications
 
 ---
 
-![🥳🥳🥳](./companies.png)
+![🥳🥳🥳](./images/companies.png)
 
 ---
 
@@ -97,11 +72,9 @@ designed to build **scalable** network applications
 
 ---
 
-![NPM](./npm.png)
+![NPM](./images/npm.png)
 
 ---
-
-# simple, easy, great community.
 
 # welcome to the community.
 

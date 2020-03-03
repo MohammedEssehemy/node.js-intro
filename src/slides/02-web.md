@@ -2,24 +2,6 @@
 
 ---
 
-![](./Client-server-model.png)
-
----
-
-# what is DNS?
-
-More Terms?
-
-# 🙄 🙄 🙄
-
-# 😡 😡 😡
-
----
-
-![](./dns.jpg)
-
----
-
 DNS
 
 Server
@@ -32,10 +14,20 @@ Protocol
 
 ---
 
-# More HTTP
-
-# 🥴🥴🥴
+![](./images/dns.jpg)
 
 ---
 
-![](./url.jpg)
+![](./images/Client-server-model.png)
+
+---
+
+# More HTTP
+
+---
+
+![](./images/url.jpg)
+
+---
+
+![](./images/talk_code.jpg)
