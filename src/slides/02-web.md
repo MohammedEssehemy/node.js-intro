@@ -30,4 +30,12 @@ Protocol
 
 ---
 
-![](./images/talk_code.jpg)
+![](./images/solve_code.jpg)
+
+---
+
+![](./images/doesnot-work.jpg)
+
+---
+
+# let's build simple server
