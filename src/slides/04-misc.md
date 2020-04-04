@@ -10,10 +10,6 @@
 
 ---
 
-![](./images/passportjs.png)
-
----
-
 ![](./images/JWT.png)
 
 ---
@@ -23,3 +19,9 @@
 ---
 
 ![](./images/hashing-vs-encryption.png)
+
+---
+
+### CORS
+![](./images/cors-overview.png)
+
