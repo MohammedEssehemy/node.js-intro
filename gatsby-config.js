@@ -6,6 +6,7 @@ module.exports = {
     repo: `https://github.com/MohammedEssehemy/node.js-intro`,
     github: `https://github.com/mohammedessehemy`,
     linkedIn: `https://linkedin.com/in/mohammed-essehemy`,
+    stackOverflow: 'https://stackoverflow.com/users/7435863/mohammed-essehemy',
     email: `mailto:mohammedessehemy@gmail.com`
   },
   plugins: [

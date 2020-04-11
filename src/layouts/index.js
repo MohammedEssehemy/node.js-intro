@@ -5,27 +5,30 @@ import Helmet from 'react-helmet';
 import GithubCorner from 'react-github-corner';
 import { Swipeable } from 'react-swipeable';
 import Transition from '../components/transition';
-import GithubIcon from './../icons/Github.png';
-import LinkedInIcon from './../icons/LinkedIn.png';
-import GmailIcon from './../icons/Gmail.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin, faGithub, faStackOverflow } from '@fortawesome/free-brands-svg-icons'
 import './index.css';
 
-const Header = ({ name, title, date, repo, github, linkedIn, email }) => (
+const Header = ({ name, title, repo, github, linkedIn, email, stackOverflow }) => (
   <header>
     <Link to="/1">
       <span>{title}</span> - {name}
     </Link>
     <div>
-      <GithubCorner href={repo} rel="noopener noreferrer" target="_blank"/>
+      <GithubCorner href={repo} rel="noopener noreferrer" target="_blank" />
       <div className="contacts">
+        <a href={email} target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faEnvelope} size="lg" title="Email" />
+        </a>
+        <a href={stackOverflow} target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faStackOverflow} size="lg" title="StackOverflow" />
+        </a>
         <a href={github} target="_blank" rel="noopener noreferrer">
-          <img src={GithubIcon} alt="github profile" />
+          <FontAwesomeIcon icon={faGithub} size="lg" title="GitHub" />
         </a>
         <a href={linkedIn} target="_blank" rel="noopener noreferrer">
-          <img src={LinkedInIcon} alt="linkedin profile" />
-        </a>
-        <a href={email} target="_blank" rel="noopener noreferrer">
-          <img src={GmailIcon} alt="send mail" />
+          <FontAwesomeIcon icon={faLinkedin} size="lg" title="LinkedIn" />
         </a>
       </div>
     </div>
@@ -71,7 +74,7 @@ class TemplateWrapper extends Component {
 
   render() {
     const { location, children, site } = this.props;
-    const {siteMetadata: { title, name, date, repo, github, linkedIn, email } } = site;
+    const { siteMetadata: { title, name, repo, linkedIn, github, stackOverflow, email } } = site;
 
     return (
       <div>
@@ -81,10 +84,10 @@ class TemplateWrapper extends Component {
         <Header
           name={name}
           title={title}
-          date={date}
           repo={repo}
-          github={github}
           linkedIn={linkedIn}
+          stackOverflow={stackOverflow}
+          github={github}
           email={email}
         />
         <Swipeable
@@ -113,10 +116,10 @@ export default props => (
           siteMetadata {
             name
             title
-            date,
             repo,
-            github,
             linkedIn,
+            github,
+            stackOverflow,
             email
           }
         }
