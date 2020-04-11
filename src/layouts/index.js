@@ -6,31 +6,32 @@ import GithubCorner from 'react-github-corner';
 import { Swipeable } from 'react-swipeable';
 import Transition from '../components/transition';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin, faGithub, faStackOverflow } from '@fortawesome/free-brands-svg-icons'
-import './index.css';
+import { config } from '@fortawesome/fontawesome-svg-core';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faGithub, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import '../styles/global.css';
 
-const Header = ({ name, title, repo, github, linkedIn, email, stackOverflow }) => (
+config.autoAddCss = false;
+
+const Header = ({ name, title, github, linkedIn, email, stackOverflow }) => (
   <header>
     <Link to="/1">
       <span>{title}</span> - {name}
     </Link>
-    <div>
-      <GithubCorner href={repo} rel="noopener noreferrer" target="_blank" />
-      <div className="contacts">
+    <div className="contacts">
         <a href={email} target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faEnvelope} size="lg" title="Email" />
+          <FontAwesomeIcon icon={faEnvelope} size="lg" title="Email" color="#00000096" />
         </a>
         <a href={stackOverflow} target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faStackOverflow} size="lg" title="StackOverflow" />
+          <FontAwesomeIcon icon={faStackOverflow} size="lg" title="StackOverflow" color="#f48024" />
         </a>
         <a href={github} target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faGithub} size="lg" title="GitHub" />
+          <FontAwesomeIcon icon={faGithub} size="lg" title="GitHub" color="#000000" />
         </a>
         <a href={linkedIn} target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faLinkedin} size="lg" title="LinkedIn" />
+          <FontAwesomeIcon icon={faLinkedin} size="lg" title="LinkedIn" color="#0077b5" />
         </a>
-      </div>
     </div>
   </header>
 );
@@ -81,10 +82,10 @@ class TemplateWrapper extends Component {
         <Helmet
           title={`${title} — ${name}`}
         />
+        <GithubCorner href={repo} rel="noopener noreferrer" target="_blank" />
         <Header
           name={name}
           title={title}
-          repo={repo}
           linkedIn={linkedIn}
           stackOverflow={stackOverflow}
           github={github}

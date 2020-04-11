@@ -2,7 +2,6 @@ module.exports = {
   siteMetadata: {
     name: `Mohammed Essehemy`,
     title: `Nodejs Intro`,
-    date: `March 15, 2019`,
     repo: `https://github.com/MohammedEssehemy/node.js-intro`,
     github: `https://github.com/mohammedessehemy`,
     linkedIn: `https://linkedin.com/in/mohammed-essehemy`,

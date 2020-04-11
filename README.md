@@ -1,3 +1,3 @@
-# Node.js Intro
+# [Node.js Intro](http://node-intro.sehemy.me) ![Deploy](https://github.com/MohammedEssehemy/node.js-intro/workflows/Deploy/badge.svg)
 
-![Build and Deploy](https://github.com/MohammedEssehemy/node.js-intro/workflows/Build%20and%20Deploy/badge.svg?branch=master)
+Keynote prepared for ITI training courses, made with ❤️ using Gatsby.
