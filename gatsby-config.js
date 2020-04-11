@@ -10,6 +10,7 @@ module.exports = {
     email: `mailto:mohammedessehemy@gmail.com`
   },
   plugins: [
+    `gatsby-plugin-favicon`,
     `gatsby-plugin-layout`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-offline`,
