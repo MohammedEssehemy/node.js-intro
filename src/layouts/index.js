@@ -78,7 +78,7 @@ class TemplateWrapper extends Component {
     const { siteMetadata: { title, name, repo, linkedIn, github, stackOverflow, email } } = site;
 
     return (
-      <div>
+      <>
         <Helmet
           title={`${title} — ${name}`}
         />
@@ -99,7 +99,7 @@ class TemplateWrapper extends Component {
             <div id="slide" style={{ 'width': '100%' }}>{children}</div>
           </Transition>
         </Swipeable>
-      </div>
+      </>
     );
   }
 }

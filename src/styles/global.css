@@ -35,6 +35,10 @@ html {
   background-color: var(--bg);
 }
 
+.github-corner svg {
+  z-index: 1;
+}
+
 header {
   font-size: 50%;
 

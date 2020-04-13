@@ -10,15 +10,15 @@
 
 ---
 
-![](./images/JWT.png)
-
----
-
-![](./images/passport-jwt.png)
-
----
-
 ![](./images/hashing-vs-encryption.png)
+
+---
+
+![](./images/digital_signature.png)
+
+---
+
+![](./images/JWT.png)
 
 ---
 
