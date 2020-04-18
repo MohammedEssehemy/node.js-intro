@@ -12,7 +12,6 @@ module.exports = {
     `gatsby-plugin-favicon`,
     `gatsby-plugin-layout`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -39,5 +38,17 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Nodejs Intro`,
+        short_name: `Nodejs`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#06ae0c`,
+        display: `standalone`,
+      }
+    },
+    `gatsby-plugin-offline`,
   ],
 };
